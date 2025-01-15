@@ -212,7 +212,17 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}На платформі Mobile доступна зміна параметрів HUD: /hudeditor");
 			}
 			else if (strfind(inputtext, !"автошкола", false) != -1  ||
-			strfind(inputtext, !"права", false) != -1  || 
+			strfind(inputtext, !"права водія", false) != -1  || 
+			strfind(inputtext, !"водійські права", false) != -1  || 
+			strfind(inputtext, !"посвідчення водія", false) != -1  || 
+			strfind(inputtext, !"посвідчення човняра", false) != -1  || 
+			strfind(inputtext, !"посвідчення пілота", false) != -1  || 
+			strfind(inputtext, !"посвідчення вертоліт", false) != -1  || 
+			strfind(inputtext, !"посвідчення лодка", false) != -1  || 
+			strfind(inputtext, !"посвідчення човен", false) != -1  || 
+			strfind(inputtext, !"посвідчення яхта", false) != -1  || 
+			strfind(inputtext, !"посвідчення машина", false) != -1  || 
+			strfind(inputtext, !"посвідчення мото", false) != -1  || 
 			strfind(inputtext, !"ліцензії", false) != -1  ||
 			strfind(inputtext, !"ліци", false) != -1  || 
 			strfind(inputtext, !"ліца", false) != -1  ||
@@ -479,9 +489,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"працювати", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Деякі роботи доступні на 1-му рівні. Для них не потрібно працевлаштування.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб дізнатись про початкові роботи, введіть: /gps - \"Початкові роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб дізнатись про початкові роботи, введіть: /gps - \"Початкові роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дізнатись про офіційні роботи можна в мерії.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\"");
 			}
 			else if (strfind(inputtext, !"вантажник", false) != -1  || 
 			strfind(inputtext, !"вантаж", false) != -1  || 
@@ -492,7 +502,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"робота вантажника", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Вантажник - це робота 1-го рівня. Працевлаштуватись можна на складі.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти дану роботу, введіть: /gps - \"Початкові роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти дану роботу, введіть: /gps - \"Початкові роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Потрібно брати коробки та відносити на місце розвантаження.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}На роботі вантажника є підвищення - робота на форкліфті.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Вона стає доступною при досягненні максимального рівня навичок.");
@@ -509,7 +519,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"робота фермера", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Фермер - це робота 1-го рівня. Працевлаштуватись можна на фермі.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти дану роботу, введіть: /gps - \"Початкові роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти дану роботу, введіть: /gps - \"Початкові роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Потрібно збирати пшеницю та відносити на місце розвантаження.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}На роботі фермера є підвищення - тракторист.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Вона стає доступною при досягненні максимального рівня навичок.");
@@ -525,7 +535,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"сервісного", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Інженер - це робота 1-го рівня. Працевлаштуватись можна в сервісному центрі.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти дану роботу, введіть: /gps - \"Початкові роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти дану роботу, введіть: /gps - \"Початкові роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Потрібно ремонтувати прилади та відносити на місце розвантаження.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}На роботі інженера є підвищення - кур`єр.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Вона стає доступною при досягненні максимального рівня навичок.");
@@ -543,7 +553,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"шахтарь", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Шахтар - це робота 1-го рівня. Працевлаштуватись можна на шахті.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти дану роботу, введіть: /gps - \"Початкові роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти дану роботу, введіть: /gps - \"Початкові роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Потрібно добувати вугілля та відносити на місце розвантаження.");
 			}
 			else if (strfind(inputtext, !"лісоруб", false) != -1  || 
@@ -558,7 +568,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"деревина", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Лісоруб - це робота 1-го рівня. Працевлаштуватись можна на лісопилці.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти дану роботу, введіть: /gps - \"Початкові роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти дану роботу, введіть: /gps - \"Початкові роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Потрібно рубати дерево та відносити на місце розвантаження.");
 			}
 			else if (strfind(inputtext, !"автобус", false) != -1  || 
@@ -571,7 +581,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"робота водія автобуса", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Водій автобуса - це робота 2-го рівня. Працевлаштуватись можна в мерії.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для роботи потрібні права. Їх можна отримати в автошколі.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб орендувати транспортний засіб, відправляйтесь на місце оренди: /gps - \"Роботи\".");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Потрібно слідувати маршруту за червоними мітками.");
@@ -585,7 +595,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"дорожний прибиральник", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дорожній прибиральник - це робота 2-го рівня. Працевлаштуватись можна в мерії.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для роботи потрібні права. Їх можна отримати в автошколі.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб орендувати транспортний засіб, відправляйтесь на місце оренди: /gps - \"Роботи\".");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Потрібно слідувати маршруту за червоними мітками.");
@@ -599,7 +609,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"таксіст", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Таксист - це робота 3-го рівня. Працевлаштуватись можна в мерії.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для роботи потрібні права. Їх можна отримати в автошколі.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб орендувати транспортний засіб, відправляйтесь на місце оренди: /gps - \"Роботи\".");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Команда /taxi дозволяє взяти виклик від клієнта.");
@@ -613,8 +623,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"кухарь", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Кухар - це робота 3-го рівня. Працевлаштуватись можна в мерії.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\".");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб почати працювати, введіть: /gps - \"Роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб почати працювати, введіть: /gps - \"Роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Потрібно складати бургер в правильній комбінації.");
 			}
 			else if (strfind(inputtext, !"сміттєвоз", false) != -1  || 
@@ -626,9 +636,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"водія сміттєвоза", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Водій сміттєвоза - це робота 4-го рівня. Працевлаштуватись можна в мерії.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для роботи потрібні права. Їх можна отримати в автошколі.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб орендувати транспортний засіб, відправляйтесь на місце оренди: /gps - \"Роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб орендувати транспортний засіб, відправляйтесь на місце оренди: /gps - \"Роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб взяти сміття, підійдіть до смітника та натисніть ALT.");
 			}
 			else if (strfind(inputtext, !"електрик", false) != -1  || 
@@ -640,9 +650,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"водій електрик", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Електрик - це робота 4-го рівня. Працевлаштуватись можна в мерії.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для роботи потрібні права. Їх можна отримати в автошколі.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб орендувати транспортний засіб, відправляйтесь на місце оренди: /gps - \"Роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб орендувати транспортний засіб, відправляйтесь на місце оренди: /gps - \"Роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб поремонтувати електричний стовп, підійдіть до стовпа та натисніть ALT.");
 			}
 			else if (strfind(inputtext, !"механік", false) != -1  || 
@@ -654,9 +664,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"ремонт механік", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Механік - це робота 5-го рівня. Працевлаштуватись можна в мерії.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для роботи потрібні права. Їх можна отримати в автошколі.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб орендувати транспортний засіб, відправляйтесь на місце оренди: /gps - \"Роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб орендувати транспортний засіб, відправляйтесь на місце оренди: /gps - \"Роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб відкрити меню механіка, введіть: /mech");
 			}
 			else if (strfind(inputtext, !"інспектор", false) != -1  || 
@@ -668,8 +678,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"інспєктор", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Інспектор - це робота 6-го рівня. Працевлаштуватись можна в мерії.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\".");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти аеропорт, введіть: /gps - \"Роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти аеропорт, введіть: /gps - \"Роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Перед початком роботи раджу перечитати правила на жовтому пікапі.");
 			}
 			else if (strfind(inputtext, !"далекобійник", false) != -1  || 
@@ -681,9 +691,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"трак робота", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Далекобійник - це робота 7-го рівня. Працевлаштуватись можна в мерії.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для роботи потрібні права. Їх можна отримати в автошколі.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб орендувати транспортний засіб, відправляйтесь на місце оренди: /gps - \"Роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб орендувати транспортний засіб, відправляйтесь на місце оренди: /gps - \"Роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Інформація про склади доступна за командою: /monitor");
 			}
 			else if (strfind(inputtext, !"пілот", false) != -1  || 
@@ -694,8 +704,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"працювати пілотом", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Пілот - це робота 8-го рівня. Працевлаштуватись можна в мерії.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\".");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти аеропорт, введіть: /gps - \"Роботи\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти мерію, введіть: /gps - \"Державні організації\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб знайти аеропорт, введіть: /gps - \"Роботи\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для роботи потрібна ліцензія на повітряний транспорт. Її можна отримати в автошколі.");
 			}
 			else if (strfind(inputtext, !"інвентар", false) != -1  || 
@@ -873,7 +883,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"поїсти", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Придбати їжу можна в ресторанах, кафе чи барах.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Знайти їх можна в навігаторі: /gps - Ресторани, бари, кафе");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Знайти їх можна в навігаторі: /gps - \"Бари, ресторани, кафе\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Після придбання їжі, потрібно відкрити інвентар (Y), обрати предмет на натиснути на слот рук.");
 			}
 			else if (strfind(inputtext, !"магазин одягу", false) != -1  || 
@@ -887,7 +897,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"одягти скін", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Придбати одяг можна в магазині одягу.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Знайти їх можна в навігаторі: /gps - Магазини одягу");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Знайти їх можна в навігаторі: /gps - \"Магазини одягу\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Після придбання одягу, потрібно відкрити інвентар (Y), обрати предмет на натиснути на слот рук.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Одяг відрізняється по статевій ознаці - одягти можна лише одяг, що підходить Вашому персонажу.");
 			}
@@ -904,7 +914,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"магаз", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Придбати розхідники (аптечки, бинти, відмички тощо) можна в магазині 24/7.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Знайти їх можна в навігаторі: /gps - Магазини 24/7");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Знайти їх можна в навігаторі: /gps - \"Магазини 24/7\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Більшість предметів магазину використовуються через інвентар (Y) на слоті рук.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}В магазині 24/7 є вибір на обох сторінках.");
 			}
@@ -922,7 +932,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Відмичку можна придбати в магазині 24/7.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Використати відмичку можна через інвентар, обравши її та натиснувши на слот рук.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Ви можете спостерігати за рівнем злому через головне меню: /mm - Навички");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Ви можете спостерігати за рівнем злому через головне меню: /mm - \"Навички\"");
 			}
 			else if (strfind(inputtext, !"банк", false) != -1  || 
 			strfind(inputtext, !"банкомат", false) != -1  || 
@@ -941,7 +951,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"як перевести гроші", false) != -1  || 
 			strfind(inputtext, !"де комунальні", false) != -1)
 			{ 
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Банк знаходиться в навігаторі: /gps - Визначні місця");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Банк знаходиться в навігаторі: /gps - \"Визначні місця\"");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Отримати картку чи оплатити комунальні послуги можна на пікапі з доларом.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}В меню банку є різні тарифи та функції.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для того, щоб стати клієнтом, потрібно мати ID-картку.");
@@ -962,6 +972,173 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}ID-картка потрібна для більших можливостей на сервері.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}В ній зберігається більше інформації про персонажа.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Показати ID-картку можна командою: /show");
+			}
+			else if (strfind(inputtext, !"риба", false) != -1  || 
+			strfind(inputtext, !"види риб", false) != -1  || 
+			strfind(inputtext, !"риби", false) != -1  || 
+			strfind(inputtext, !"риби види", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}В океані плаває багато різної риби.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Серед них: риба-клоун, риба-метелик, риба-ангел, адун, зебрасома, медуза, акула.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб ловити рибу, потрібні вудка та наживка. Їх можна придбати на ринку.");
+			}
+			else if (strfind(inputtext, !"м'ясо", false) != -1  || 
+			strfind(inputtext, !"мясо", false) != -1  || 
+			strfind(inputtext, !"м`ясо", false) != -1  || 
+			strfind(inputtext, !"мясо кабана", false) != -1  || 
+			strfind(inputtext, !"м'ясо кабана", false) != -1  || 
+			strfind(inputtext, !"види мяса", false) != -1  || 
+			strfind(inputtext, !"види м'яса", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}З обробки туші кабана можна отримати різні види м'яса.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Серед них: легені, печінка, рулька, реберця, ошийок, окіст.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб обробити тушу, потрібен ніж. Його можна придбати на ринку.");
+			}
+			else if (strfind(inputtext, !"гриби", false) != -1  || 
+			strfind(inputtext, !"види грибів", false) != -1  || 
+			strfind(inputtext, !"гриб", false) != -1  || 
+			strfind(inputtext, !"гриб види", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Є декілька видів грибів, які можна зібрати.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Серед них: печериця, зморшок, лисичка, білий гриб.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб зрізати гриб, потрібен ніж. Його можна придбати на ринку.");
+			}
+			else if (strfind(inputtext, !"студія покращення", false) != -1  || 
+			strfind(inputtext, !"покращення житла", false) != -1  || 
+			strfind(inputtext, !"інтерєр купити", false) != -1  || 
+			strfind(inputtext, !"сейф купити", false) != -1  || 
+			strfind(inputtext, !"сейф", false) != -1  || 
+			strfind(inputtext, !"інтер`єр купити", false) != -1  || 
+			strfind(inputtext, !"інтер'єр купити", false) != -1  || 
+			strfind(inputtext, !"покращити дім", false) != -1  || 
+			strfind(inputtext, !"покращити будинок", false) != -1  || 
+			strfind(inputtext, !"покращити гараж", false) != -1  || 
+			strfind(inputtext, !"купити гараж", false) != -1  || 
+			strfind(inputtext, !"мебельний", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Студія покращення нерухомості слугує місцем, де можна покращити своє житло.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дана локація доступна в навігаторі: /gps - \"Державні підприємства\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}До послуг студії входить зміна інтер'єру, покращення гаража та придбання сейфу.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Можна покращити будинки класів Середній та вище, але лише на 1 клас.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Сейф можна придбати для будь-якого будинку, в ньому є 500 кг вільного місця.");
+			}
+			else if (strfind(inputtext, !"тир", false) != -1  || 
+			strfind(inputtext, !"аммо", false) != -1  || 
+			strfind(inputtext, !"аммунація", false) != -1  || 
+			strfind(inputtext, !"аммуніція", false) != -1  || 
+			strfind(inputtext, !"магазин зброї", false) != -1  || 
+			strfind(inputtext, !"купити зброю", false) != -1  || 
+			strfind(inputtext, !"придбати зброю", false) != -1  || 
+			strfind(inputtext, !"придбати патрони", false) != -1  || 
+			strfind(inputtext, !"купити патрони", false) != -1  || 
+			strfind(inputtext, !"амо", false) != -1  || 
+			strfind(inputtext, !"прокачати збройні навички", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Тир слугує місцем, де можна придбати зброю офіційно або прокачати збройні навички.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дана локація доступна в навігаторі: /gps - \"Державні підприємства\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для придбання зброї потрібна ліцензія. Її можна отримати в автошколі.");
+			}
+			else if (strfind(inputtext, !"хтивий", false) != -1  || 
+			strfind(inputtext, !"сексшоп", false) != -1  || 
+			strfind(inputtext, !"секс шоп", false) != -1  || 
+			strfind(inputtext, !"купити іграшку", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Хтивий магазинчик слугує місцем, де можна придбати хтиві товари.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Серед них: іграшки різних видів, маска, мотузка.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дана локація доступна в навігаторі: /gps - \"Державні підприємства\"");
+			}
+			else if (strfind(inputtext, !"тюнинг", false) != -1  || 
+			strfind(inputtext, !"тюнінг", false) != -1  || 
+			strfind(inputtext, !"нітро", false) != -1  || 
+			strfind(inputtext, !"nitro", false) != -1  || 
+			strfind(inputtext, !"стейдж", false) != -1  || 
+			strfind(inputtext, !"сто", false) != -1  || 
+			strfind(inputtext, !"станція тех", false) != -1  || 
+			strfind(inputtext, !"автомайстерня", false) != -1  || 
+			strfind(inputtext, !"фарбування", false) != -1  || 
+			strfind(inputtext, !"покраска", false) != -1  || 
+			strfind(inputtext, !"покрасити машину", false) != -1  || 
+			strfind(inputtext, !"покрасити авто", false) != -1  || 
+			strfind(inputtext, !"тюнінг авто", false) != -1  || 
+			strfind(inputtext, !"перфоманс", false) != -1  || 
+			strfind(inputtext, !"перформанс", false) != -1  || 
+			strfind(inputtext, !"performance", false) != -1  || 
+			strfind(inputtext, !"perfomance", false) != -1  || 
+			strfind(inputtext, !"tuning", false) != -1  || 
+			strfind(inputtext, !"прокачати тачку", false) != -1  || 
+			strfind(inputtext, !"прокачати машину", false) != -1  || 
+			strfind(inputtext, !"поставити тюнінг", false) != -1  || 
+			strfind(inputtext, !"los santos customs", false) != -1  || 
+			strfind(inputtext, !"los-santos customs", false) != -1  || 
+			strfind(inputtext, !"тачка на прокачку", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}СТО слугує місцем, де можна пофарбувати або покращити т/з.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дана локація доступна в навігаторі: /gps - \"Державні підприємства\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Фарбування дає можливість змінити основний та додатковий кольори т/з.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Performance Tuning дає можливість встановити Stage та поставити Nitro.");
+			}
+			else if (strfind(inputtext, !"спортзал", false) != -1  || 
+			strfind(inputtext, !"gym", false) != -1  || 
+			strfind(inputtext, !"sporthall", false) != -1  || 
+			strfind(inputtext, !"спорт зал", false) != -1  || 
+			strfind(inputtext, !"бокс", false) != -1  || 
+			strfind(inputtext, !"кунфу", false) != -1  || 
+			strfind(inputtext, !"кунгфу", false) != -1  || 
+			strfind(inputtext, !"кунг-фу", false) != -1  || 
+			strfind(inputtext, !"кунг фу", false) != -1  || 
+			strfind(inputtext, !"стиль бою", false) != -1  || 
+			strfind(inputtext, !"стиль боя", false) != -1  || 
+			strfind(inputtext, !"тренування", false) != -1  || 
+			strfind(inputtext, !"кікбоксінг", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Спортзал слугує місцем, де можна вивчити стиль бою.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Серед них: бокс, кунг-фу, кікбоксінг.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дана локація доступна в навігаторі: /gps - \"Державні підприємства\"");
+			}
+			else if (strfind(inputtext, !"казино", false) != -1  || 
+			strfind(inputtext, !"казік", false) != -1  || 
+			strfind(inputtext, !"казик", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Казино слугує місцем, де можна зіграти у азартні ігри на гроші.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Серед них: блекджек, рулетка, кістки та автомати.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дана локація доступна в навігаторі: /gps - \"Державні підприємства\"");
+			}
+			else if (strfind(inputtext, !"блекджек", false) != -1  || 
+			strfind(inputtext, !"блек джек", false) != -1  || 
+			strfind(inputtext, !"blackjack", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Блекджек - це гра в казино.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Суть гри - набрати більше очок, ніж дилер, але менше за 21.");
+			}
+			else if (strfind(inputtext, !"рулетка", false) != -1  || 
+			strfind(inputtext, !"чорне червоне", false) != -1  || 
+			strfind(inputtext, !"червоне чорне", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Рулетка - це гра в казино.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Суть гри - Ви обираєте одну з ділянок та сподіваєтесь на вдачу.");
+			}
+			else if (strfind(inputtext, !"однорукий бандит", false) != -1  || 
+			strfind(inputtext, !"автомати казино", false) != -1  || 
+			strfind(inputtext, !"автомати", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Автомати - це гра в казино.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Суть гри - Вам повинна випасти виграшна комбінація.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Синонім до цього слова означає вид автоматичної зброї.");
+			}
+			else if (strfind(inputtext, !"кости", false) != -1  || 
+			strfind(inputtext, !"кістки", false) != -1  || 
+			strfind(inputtext, !"кості", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Кістки - це гра в казино.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Суть гри - отримати більше число, ніж у опонента.");
+			}
+			else if (strfind(inputtext, !"щаслива рулетка", false) != -1  || 
+			strfind(inputtext, !"колесо фортуни", false) != -1  || 
+			strfind(inputtext, !"фортуна", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щаслива рулетка - це гра в казино.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Суть гри - за 3 години гри Вам дається один безкоштовний спін.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Можуть випасти призи різної ціни та видів - від одягу до грошей.");
 			}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////// PLAYERS
