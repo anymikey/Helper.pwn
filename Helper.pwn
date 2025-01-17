@@ -209,7 +209,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для того, щоб викликати меню налаштувань, введіть: /mm - \"Налаштування\".");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Налаштування гри доступні в головному меню (ESC)."); 
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}На платформі Mobile доступна зміна параметрів HUD: /hudeditor");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Альтернативно, можна викликати меню через мобільний застосунок \"Налаштування\"..");
 			}
 			else if (strfind(inputtext, !"автошкола", false) != -1  ||
 			strfind(inputtext, !"права водія", false) != -1  || 
@@ -1140,6 +1140,165 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Суть гри - за 3 години гри Вам дається один безкоштовний спін.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Можуть випасти призи різної ціни та видів - від одягу до грошей.");
 			}
+			else if (strfind(inputtext, !"телефон", false) != -1  || 
+			strfind(inputtext, !"слухавка", false) != -1  || 
+			strfind(inputtext, !"H", false) != -1  || 
+			strfind(inputtext, !"мобільний телефон", false) != -1  || 
+			strfind(inputtext, !"сім карта", false) != -1  || 
+			strfind(inputtext, !"сімка", false) != -1  || 
+			strfind(inputtext, !"sim", false) != -1  || 
+			strfind(inputtext, !"сім-карта", false) != -1  || 
+			strfind(inputtext, !"мобіла", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Телефон має широкий спектр функцій. Його можна придбати в магазині 24/7.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для більшості функцій потрібна сім-карта. Її також можна придбати в магазині.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб дістати телефон, натисніть H.");
+			}
+			else if (strfind(inputtext, !"звонок", false) != -1  || 
+			strfind(inputtext, !"дзвінок", false) != -1  || 
+			strfind(inputtext, !"взяти трубку", false) != -1  || 
+			strfind(inputtext, !"смс", false) != -1  || 
+			strfind(inputtext, !"мобільний баланс", false) != -1  || 
+			strfind(inputtext, !"баланс телефон", false) != -1  || 
+			strfind(inputtext, !"sms", false) != -1  || 
+			strfind(inputtext, !"/sms", false) != -1  || 
+			strfind(inputtext, !"/p", false) != -1  || 
+			strfind(inputtext, !"/h", false) != -1  || 
+			strfind(inputtext, !"H", false) != -1  || 
+			strfind(inputtext, !"покласти трубку", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб зателефонувати іншому гравцю, скористайтесь застосунком \"Дзвінок\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб підняти слухавку, введіть: /p. Щоб покласти слухавку, введіть: /h");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб відправити СМС, введіть: /sms [Номер] [Повідомлення]");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Поповнити баланс можна через банк, мобільний застосунок чи банкомат.");
+			}
+			else if (strfind(inputtext, !"мобільний банк", false) != -1  || 
+			strfind(inputtext, !"банкінг", false) != -1  || 
+			strfind(inputtext, !"застосунок банк", false) != -1  || 
+			strfind(inputtext, !"приложение банк", false) != -1  || 
+			strfind(inputtext, !"банк телефон", false) != -1  || 
+			strfind(inputtext, !"банк мобіла", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Переглянути баланс та поповнити мобільний рахунок можна через застосунок \"Банк\".");
+			}
+			else if (strfind(inputtext, !"застосунок транспорт", false) != -1  || 
+			strfind(inputtext, !"транспорт телефон", false) != -1  || 
+			strfind(inputtext, !"машина телефон", false) != -1  || 
+			strfind(inputtext, !"викликати машину", false) != -1  || 
+			strfind(inputtext, !"машина телефон", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Переглянути або викликати особистий т/з можна через застосунок \"Транспорт\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Транспортні засоби відображаються, якщо у гравця є житло.");
+			}
+			else if (strfind(inputtext, !"застосунок будинок", false) != -1  || 
+			strfind(inputtext, !"будинок телефон", false) != -1  || 
+			strfind(inputtext, !"дім телефон", false) != -1  || 
+			strfind(inputtext, !"житло телефон", false) != -1  || 
+			strfind(inputtext, !"телефон житло", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Переглянути інформацію про будинок можна через застосунок \"Будинок\".");
+			}
+			else if (strfind(inputtext, !"застосунок бізнес", false) != -1  || 
+			strfind(inputtext, !"бізнес телефон", false) != -1  || 
+			strfind(inputtext, !"товари бізнес телефон", false) != -1  || 
+			strfind(inputtext, !"акції телефон", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Переглянути інформацію про бізнес чи акції можна через застосунок \"Бізнес\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Альтернативне меню бізнесу викликається командою: /bmenu");
+			}
+			else if (strfind(inputtext, !"застосунок сім'я", false) != -1  || 
+			strfind(inputtext, !"сім'я телефон", false) != -1  || 
+			strfind(inputtext, !"сім`я телефон", false) != -1  || 
+			strfind(inputtext, !"сімя телефон", false) != -1  || 
+			strfind(inputtext, !"семя телефон", false) != -1  || 
+			strfind(inputtext, !"телефон сімейний", false) != -1  || 
+			strfind(inputtext, !"телефон сім'я", false) != -1  || 
+			strfind(inputtext, !"телефон сім`я", false) != -1  || 
+			strfind(inputtext, !"семья телефон", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Викликати меню сім'ї можна через застосунок \"Сім'я\".");
+			}
+			else if (strfind(inputtext, !"час телефон", false) != -1  || 
+			strfind(inputtext, !"телефон time", false) != -1  || 
+			strfind(inputtext, !"time", false) != -1  || 
+			strfind(inputtext, !"годинник", false) != -1  || 
+			strfind(inputtext, !"час", false) != -1  || 
+			strfind(inputtext, !"точний час", false) != -1  || 
+			strfind(inputtext, !"время", false) != -1  || 
+			strfind(inputtext, !"врємя", false) != -1  || 
+			strfind(inputtext, !"точное время", false) != -1  || 
+			strfind(inputtext, !"/time", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Подивитись точний час можна через застосунок \"Годинник\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Альтернативна команда: /time");
+			}
+			else if (strfind(inputtext, !"карти телефон", false) != -1  || 
+			strfind(inputtext, !"телефон gps", false) != -1  || 
+			strfind(inputtext, !"gps", false) != -1  || 
+			strfind(inputtext, !"навігатор", false) != -1  || 
+			strfind(inputtext, !"/gps", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Викликати навігатор можна через застосунок \"Карти\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Альтернативна команда: /gps");
+			}
+			else if (strfind(inputtext, !"реклама", false) != -1  || 
+			strfind(inputtext, !"оголошення", false) != -1  || 
+			strfind(inputtext, !"рекламне оголошення", false) != -1  || 
+			strfind(inputtext, !"подати рекламу", false) != -1  || 
+			strfind(inputtext, !"ad", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Подати рекламне оголошення можна через застосунок \"Реклама\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Редагувати оголошення (для редакторів ЗМІ) можна командою: /news");
+			}
+			else if (strfind(inputtext, !"викликати таксі", false) != -1  || 
+			strfind(inputtext, !"таксі застосунок", false) != -1  || 
+			strfind(inputtext, !"такси приложение", false) != -1  || 
+			strfind(inputtext, !"замовити таксі", false) != -1  || 
+			strfind(inputtext, !"заказать такси", false) != -1  || 
+			strfind(inputtext, !"заказати таксі", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Викликати таксі можна через застосунок \"Таксі\".");
+			}
+			else if (strfind(inputtext, !"довідник", false) != -1  || 
+			strfind(inputtext, !"номер телефону", false) != -1  || 
+			strfind(inputtext, !"телефонна книга", false) != -1  || 
+			strfind(inputtext, !"номер телефона", false) != -1  || 
+			strfind(inputtext, !"/number", false) != -1  || 
+			strfind(inputtext, !"number", false) != -1  || 
+			strfind(inputtext, !"дізнатись номер", false) != -1  || 
+			strfind(inputtext, !"записати номер", false) != -1  || 
+			strfind(inputtext, !"контакти", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Зберегти мобільний номер гравця можна через застосунок \"Контакти\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Подивитись номер гравця можна командою: /number [ID]");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Номери спеціальних служб уже записані в контакти.");
+			}
+			else if (strfind(inputtext, !"номер поліції", false) != -1  || 
+			strfind(inputtext, !"номер лікарні", false) != -1  || 
+			strfind(inputtext, !"номер мю", false) != -1  || 
+			strfind(inputtext, !"номер моз", false) != -1  || 
+			strfind(inputtext, !"номер змі", false) != -1  || 
+			strfind(inputtext, !"номер weazel", false) != -1  || 
+			strfind(inputtext, !"номер механік", false) != -1  || 
+			strfind(inputtext, !"101", false) != -1  || 
+			strfind(inputtext, !"102", false) != -1  || 
+			strfind(inputtext, !"333", false) != -1  || 
+			strfind(inputtext, !"555", false) != -1  || 
+			strfind(inputtext, !"подзвонити в поліцію", false) != -1  || 
+			strfind(inputtext, !"позвонити в поліцію", false) != -1  || 
+			strfind(inputtext, !"викликати поліцію", false) != -1  || 
+			strfind(inputtext, !"викликати ментів", false) != -1  || 
+			strfind(inputtext, !"викликати лікаря", false) != -1  || 
+			strfind(inputtext, !"викликати механіка", false) != -1  || 
+			strfind(inputtext, !"номер змі", false) != -1  || 
+			strfind(inputtext, !"номер weazel news", false) != -1  || 
+			strfind(inputtext, !"змі номер", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Номер лікарні: 101");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Номер поліції: 102");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Номер механіка: 555");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Номер Weazel News: 333");
+			}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////// PLAYERS
               
@@ -1152,7 +1311,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"альфа", false) != -1  ||
 			strfind(inputtext, !"богдан доценко", false) != -1  ||
 			strfind(inputtext, !"богдан дотсенко", false) != -1  ||
-			strfind(inputtext, !"альфа канал", false) != -1)
+			strfind(inputtext, !"альфа стрім", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Alpha Blogger - це медіа партнер нашого проєкту.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його нікнейм: Bohdan_Dotsenko");
@@ -1202,15 +1361,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його нікнейм: Khemik_Dollar");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його промокод: #Dollar");
 			}
-			else if (strfind(inputtext, !"bomber", false) != -1  || 
-			strfind(inputtext, !"бомбер", false) != -1  ||
-			strfind(inputtext, !"бомбер стрім", false) != -1  ||
-			strfind(inputtext, !"бомбер тікток", false) != -1)
-			{ 
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Bomber - це медіа партнер нашого проєкту.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його нікнейм: Diego_Briggs");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його промокод: bomber");
-			}
+			// else if (strfind(inputtext, !"bomber", false) != -1  || 
+			// strfind(inputtext, !"бомбер", false) != -1  ||
+			// strfind(inputtext, !"бомбер стрім", false) != -1  ||
+			// strfind(inputtext, !"бомбер тікток", false) != -1)
+			// { 
+			// 	SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Bomber - це медіа партнер нашого проєкту.");
+			// 	SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його нікнейм: Diego_Briggs");
+			// 	SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його промокод: bomber");
+			// }
 			else if (strfind(inputtext, !"raldest", false) != -1  || 
 			strfind(inputtext, !"raldest blogger", false) != -1  ||
 			strfind(inputtext, !"сирников", false) != -1  ||
