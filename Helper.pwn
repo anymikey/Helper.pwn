@@ -1218,19 +1218,23 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Викликати меню сім'ї можна через застосунок \"Сім'я\".");
 			}
-			else if (strfind(inputtext, !"час телефон", false) != -1  || 
+			else if (strfind(inputtext, !"час телефон", false) != -1  ||       
 			strfind(inputtext, !"телефон time", false) != -1  || 
-			strfind(inputtext, !"time", false) != -1  || 
+      		strfind(inputtext, !"time", false) != -1  ||       
 			strfind(inputtext, !"годинник", false) != -1  || 
-			strfind(inputtext, !"час", false) != -1  || 
-			strfind(inputtext, !"точний час", false) != -1  || 
-			strfind(inputtext, !"время", false) != -1  || 
+      		strfind(inputtext, !"час", false) != -1  ||       
+	  		strfind(inputtext, !"точний час", false) != -1  || 
+			strfind(inputtext, !"время", false) != -1  ||       
 			strfind(inputtext, !"врємя", false) != -1  || 
-			strfind(inputtext, !"точное время", false) != -1  || 
+			strfind(inputtext, !"точное время", false) != -1  ||       
 			strfind(inputtext, !"/time", false) != -1)
-			{ 
+      		{   
+				new hour, minute, string[49];   
+				gettime(hour, minute);     
+				format(string, sizeof(string), "{00b0b0}[GhostGPT] {FFFFFF}Точний час: %02d:%02d", hour, minute);   
+				SCM(playerid, COLOR_WHITE, string);       
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Подивитись точний час можна через застосунок \"Годинник\".");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Альтернативна команда: /time");
+        		SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Альтернативна команда: /time");      
 			}
 			else if (strfind(inputtext, !"карти телефон", false) != -1  || 
 			strfind(inputtext, !"телефон gps", false) != -1  || 
