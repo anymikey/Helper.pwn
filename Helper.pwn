@@ -1303,6 +1303,130 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Номер механіка: 555");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Номер Weazel News: 333");
 			}
+			else if (strfind(inputtext, !"розважальний", false) != -1  || 
+			strfind(inputtext, !"розважальний центр", false) != -1  || 
+			strfind(inputtext, !"розваги", false) != -1  || 
+			strfind(inputtext, !"центр розваг", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Розважальний центр - це заклад, у якому можна пограти у різні ігри.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дана локація доступна в навігаторі: /gps - \"Визначні місця\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Серед ігор: дуелі, пейнтбол, драйв, стант та червоне світло, зелене світло.");
+			}
+			else if (strfind(inputtext, !"пейнтбол", false) != -1  || 
+			strfind(inputtext, !"дмз", false) != -1  || 
+			strfind(inputtext, !"paintball", false) != -1  || 
+			strfind(inputtext, !"пінбол", false) != -1  || 
+			strfind(inputtext, !"пэйнтбол", false) != -1  || 
+			strfind(inputtext, !"дмз арена", false) != -1  || 
+			strfind(inputtext, !"пинбол", false) != -1  || 
+			strfind(inputtext, !"pinball", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Пейнтбол - це одна з ігор в розважальному центрі.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Розважальний центр доступний в навігаторі: /gps - \"Визначні місця\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Її суть - вбивати ворогів, набираючи очки.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Команди пейнтболу: /pexit, /pgun, /ptop");
+			}
+			else if (strfind(inputtext, !"дуелі", false) != -1  || 
+			strfind(inputtext, !"дуели", false) != -1  || 
+			strfind(inputtext, !"дуэли", false) != -1  || 
+			strfind(inputtext, !"дуель", false) != -1  || 
+			strfind(inputtext, !"дуельки", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дуелы - це одна з ігор в розважальному центрі.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Розважальний центр доступний в навігаторі: /gps - \"Визначні місця\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Її суть - вбивати ворогів у протистоянні 1 на 1.");
+			}
+			else if (strfind(inputtext, !"драйв", false) != -1  || 
+			strfind(inputtext, !"драйв гонка", false) != -1  || 
+			strfind(inputtext, !"drive", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Драйв - це одна з ігор в розважальному центрі.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Розважальний центр доступний в навігаторі: /gps - \"Визначні місця\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Її суть - вільний режим тестування транспортного засобу.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Команди драйву: /pexit, /stage");
+			}
+			else if (strfind(inputtext, !"стант", false) != -1  || 
+			strfind(inputtext, !"стант гонка", false) != -1  || 
+			strfind(inputtext, !"stunt", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Стант - це одна з ігор в розважальному центрі.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Розважальний центр доступний в навігаторі: /gps - \"Визначні місця\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Її суть - пройти трасу на швидкість.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Команди станту: /pexit");
+			}
+			else if (strfind(inputtext, !"тише едешь", false) != -1  || 
+			strfind(inputtext, !"дальше будешь", false) != -1  || 
+			strfind(inputtext, !"красный свет", false) != -1  || 
+			strfind(inputtext, !"красний свет", false) != -1  || 
+			strfind(inputtext, !"червоне світло", false) != -1  || 
+			strfind(inputtext, !"зелене світло", false) != -1  || 
+			strfind(inputtext, !"гра в кальмара", false) != -1  || 
+			strfind(inputtext, !"гра кальмар", false) != -1  || 
+			strfind(inputtext, !"squid game", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Червоне світло, зелене світло - це одна з ігор в розважальному центрі.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Розважальний центр доступний в навігаторі: /gps - \"Визначні місця\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Її суть - пройти до кінця зони, не рухаючись на червоний колір підлоги.");
+			}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////// QUESTS
+			else if (strfind(inputtext, !"квест", false) != -1  || 
+			strfind(inputtext, !"завдання", false) != -1  || 
+			strfind(inputtext, !"квести", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Квести (сюжетні завдання) дають можливість гравцю краще пізнати гру.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Ви можете зустріти декілька сюжетних героїв на карті.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Серед них: Правда, Гондур, Том Коннорс, Бенні, Джеремі.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
+			}
+			else if (strfind(inputtext, !"правда", false) != -1  || 
+			strfind(inputtext, !"правда квест", false) != -1  || 
+			strfind(inputtext, !"правда сюжет", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Правда - це перший сюжетний персонаж.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Це дідусь, що знаходиться на початковому спавні.");
+			}
+			else if (strfind(inputtext, !"гондур", false) != -1  || 
+			strfind(inputtext, !"гондур квест", false) != -1  || 
+			strfind(inputtext, !"гондур сюжет", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Гондур - це другий сюжетний персонаж.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Це чоловік, що знаходиться біля банку.");
+			}
+			else if (strfind(inputtext, !"коннорс", false) != -1  || 
+			strfind(inputtext, !"том коннорс", false) != -1  || 
+			strfind(inputtext, !"том квест", false) != -1  || 
+			strfind(inputtext, !"конорс квест", false) != -1  || 
+			strfind(inputtext, !"конорс", false) != -1  || 
+			strfind(inputtext, !"том конорс", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Том Коннорс - це третій сюжетний персонаж.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Він є генеральним менеджером в казино.");
+			}
+			else if (strfind(inputtext, !"бенні", false) != -1  || 
+			strfind(inputtext, !"бенні квест", false) != -1  || 
+			strfind(inputtext, !"бенні сюжет", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Бенні - це четвертий сюжетний персонаж.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Це механік, що працює на авторозбиранні.");
+			}
+			else if (strfind(inputtext, !"джеремі", false) != -1  || 
+			strfind(inputtext, !"джеремі квест", false) != -1  || 
+			strfind(inputtext, !"джеремі сюжет", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Джеремі - це п'ятий сюжетний персонаж.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Він є працівником в розважальному центрі.");
+			}
+			else if (strfind(inputtext, !"мій початок", false) != -1  || 
+			strfind(inputtext, !"мій початок квест", false) != -1  || 
+			strfind(inputtext, !"мій початок завдання", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Мій початок\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно відкрити інвентар клавішею Y.");
+			}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////// GPS
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////// PLAYERS
               
