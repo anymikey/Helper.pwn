@@ -1314,6 +1314,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			}
 			else if (strfind(inputtext, !"пейнтбол", false) != -1  || 
 			strfind(inputtext, !"дмз", false) != -1  || 
+			strfind(inputtext, !"дмзона", false) != -1  || 
+			strfind(inputtext, !"дм зона", false) != -1  || 
+			strfind(inputtext, !"dm-zone", false) != -1  || 
+			strfind(inputtext, !"dmzone", false) != -1  || 
+			strfind(inputtext, !"dmz", false) != -1  || 
 			strfind(inputtext, !"paintball", false) != -1  || 
 			strfind(inputtext, !"пінбол", false) != -1  || 
 			strfind(inputtext, !"пэйнтбол", false) != -1  || 
@@ -1424,11 +1429,114 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Мій початок\" - це квест у Правди.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно відкрити інвентар клавішею Y.");
 			}
+			else if (strfind(inputtext, !"хто я", false) != -1  || 
+			strfind(inputtext, !"хто я квест", false) != -1  || 
+			strfind(inputtext, !"паспорт квест", false) != -1  || 
+			strfind(inputtext, !"ід картка квест", false) != -1  || 
+			strfind(inputtext, !"id-картка квест", false) != -1  || 
+			strfind(inputtext, !"id картка квест", false) != -1  || 
+			strfind(inputtext, !"хто я завдання", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Хто я?\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно отримати ID-картку в мерії.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дана локація знаходиться в навігаторі: /gps - \"Державні організації\"");
+			}
+			else if (strfind(inputtext, !"коробки так коробки", false) != -1  || 
+			strfind(inputtext, !"коробки квест", false) != -1  || 
+			strfind(inputtext, !"вантажник квест", false) != -1  || 
+			strfind(inputtext, !"грузчик квест", false) != -1  || 
+			strfind(inputtext, !"коробка квест", false) != -1  || 
+			strfind(inputtext, !"коробки завдання", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Коробки так коробки\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно перенести 15 коробок на роботі вантажника.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Склад знаходиться в навігаторі: /gps - \"Початкові роботи\"");
+			}
+			else if (strfind(inputtext, !"біль у шлунку", false) != -1  || 
+			strfind(inputtext, !"біль у шлунку квест", false) != -1  || 
+			strfind(inputtext, !"півень квест", false) != -1  || 
+			strfind(inputtext, !"поїсти у півня квест", false) != -1  || 
+			strfind(inputtext, !"біль у шлунку квест", false) != -1  || 
+			strfind(inputtext, !"біль у шлунку завдання", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Біль у шлунку\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно поїсти їжу у Півня.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Півня можна знайти на початковому спавні.");
+			}
+			else if (strfind(inputtext, !"профілактика", false) != -1  || 
+			strfind(inputtext, !"профілактика квест", false) != -1  || 
+			strfind(inputtext, !"коронавірус квест", false) != -1  || 
+			strfind(inputtext, !"медична маска квест", false) != -1  || 
+			strfind(inputtext, !"профілактика завдання", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Профілактика коронавірусу\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно придбати медичну маску в магазині.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Магазин знаходиться в навігаторі: /gps - \"Магазини 24/7\"");
+			}
+			else if (strfind(inputtext, !"спочатку було дерево", false) != -1  || 
+			strfind(inputtext, !"спочатку було дерево квест", false) != -1  || 
+			strfind(inputtext, !"лісоруб квест", false) != -1  || 
+			strfind(inputtext, !"лесоруб квест", false) != -1  || 
+			strfind(inputtext, !"лісопилка квест", false) != -1  || 
+			strfind(inputtext, !"лісопилка завдання", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Спочатку було дерево\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно зрубати 15 дерев на роботі лісоруба.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Лісопилка знаходиться в навігаторі: /gps - \"Початкові роботи\"");
+			}
+			else if (strfind(inputtext, !"по братськи", false) != -1  || 
+			strfind(inputtext, !"по-братськи", false) != -1  || 
+			strfind(inputtext, !"потиснути руку квест", false) != -1  || 
+			strfind(inputtext, !"/hi квест", false) != -1  || 
+			strfind(inputtext, !"hi квест", false) != -1  || 
+			strfind(inputtext, !"по-братськи квест", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"По-братськи\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно потиснути руку іншому гравцю.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Це можна зробити командою: /hi [ID]");
+			}
+			else if (strfind(inputtext, !"відкрита рана", false) != -1  || 
+			strfind(inputtext, !"квест відкрита рана", false) != -1  || 
+			strfind(inputtext, !"квест бинт", false) != -1  || 
+			strfind(inputtext, !"квест використати бинт", false) != -1  || 
+			strfind(inputtext, !"бинт квест", false) != -1  || 
+			strfind(inputtext, !"бинт завдання", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Відкрита рана\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно придбати в магазині та використати бинт.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Магазин знаходиться в навігаторі: /gps - \"Магазини 24/7\"");
+			}
+			else if (strfind(inputtext, !"а потім було вугілля", false) != -1  || 
+			strfind(inputtext, !"було вугілля квест", false) != -1  || 
+			strfind(inputtext, !"вугілля квест", false) != -1  || 
+			strfind(inputtext, !"шахта квест", false) != -1  || 
+			strfind(inputtext, !"шахтар квест", false) != -1  || 
+			strfind(inputtext, !"шахта завдання", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"А потім було вугілля\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно викопати 10 вугілля на роботі шахтаря.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Шахта знаходиться в навігаторі: /gps - \"Початкові роботи\"");
+			}
+			else if (strfind(inputtext, !"кредитор", false) != -1  || 
+			strfind(inputtext, !"кредитор квест", false) != -1  || 
+			strfind(inputtext, !"кредитор завдання", false) != -1  || 
+			strfind(inputtext, !"квест банк", false) != -1  || 
+			strfind(inputtext, !"банк квест", false) != -1  || 
+			strfind(inputtext, !"банківська карта квест", false) != -1  || 
+			strfind(inputtext, !"банківська картка квест", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Кредитор\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно отримати банківську картку.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Банк знаходиться в навігаторі: /gps - \"Визначні місця\"");
+			}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////// GPS
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////// PLAYERS
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////// RP
               
 ///////////////////////////////////////////////////
 /////////// MEDIA
@@ -1543,15 +1651,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його нікнейм: Alex_Tripl");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його промокод: TRIPL");
 			}
-			else if (strfind(inputtext, !"knyaz", false) != -1  || 
-			strfind(inputtext, !"young knyaz", false) != -1  ||
-			strfind(inputtext, !"князь", false) != -1  ||
-			strfind(inputtext, !"княз", false) != -1)
-			{ 
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Knyaz - це медіа партнер нашого проєкту.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його нікнейм: Young_Knyaz");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його промокод: knyaz");
-			}
+			// else if (strfind(inputtext, !"knyaz", false) != -1  || 
+			// strfind(inputtext, !"young knyaz", false) != -1  ||
+			// strfind(inputtext, !"князь", false) != -1  ||
+			// strfind(inputtext, !"княз", false) != -1)
+			// { 
+			// 	SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Knyaz - це медіа партнер нашого проєкту.");
+			// 	SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його нікнейм: Young_Knyaz");
+			// 	SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його промокод: knyaz");
+			// }
 			else if (strfind(inputtext, !"htosy", false) != -1  || 
 			strfind(inputtext, !"денис третяк", false) != -1  ||
 			strfind(inputtext, !"denis tretiak", false) != -1  ||
@@ -1568,6 +1676,36 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Ixtelbin - це медіа партнер нашого проєкту.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його нікнейм: Mario_Nitti");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його промокод: #ixtelbin");
+			}
+			else if (strfind(inputtext, !"syntax", false) != -1  || 
+			strfind(inputtext, !"синтакс", false) != -1  || 
+			strfind(inputtext, !"лакост", false) != -1  || 
+			strfind(inputtext, !"lacoste", false) != -1  || 
+			strfind(inputtext, !"сінтакс", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Syntax - це медіа партнер нашого проєкту.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його нікнейм: Lacoste_Syntax");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його промокод: SYNTAX");
+			}
+			else if (strfind(inputtext, !"mik", false) != -1  || 
+			strfind(inputtext, !"мікеллі", false) != -1  || 
+			strfind(inputtext, !"mikelli", false) != -1  || 
+			strfind(inputtext, !"greison", false) != -1  || 
+			strfind(inputtext, !"sanya greison", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Mikelli - це медіа партнер нашого проєкту.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його нікнейм: Sanya_Greison");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його промокод: mik");
+			}
+			else if (strfind(inputtext, !"bloody", false) != -1  || 
+			strfind(inputtext, !"блуді", false) != -1  || 
+			strfind(inputtext, !"бладі", false) != -1  || 
+			strfind(inputtext, !"lex", false) != -1  || 
+			strfind(inputtext, !"lex bloody", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Bloody - це медіа партнер нашого проєкту.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його нікнейм: Lex_Bloody");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його промокод: bloody");
 			}
 /////////// FAMILY
 
