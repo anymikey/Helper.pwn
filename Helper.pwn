@@ -512,8 +512,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"ферма", false) != -1  || 
 			strfind(inputtext, !"трактор", false) != -1  || 
 			strfind(inputtext, !"трахтор", false) != -1  || 
+			strfind(inputtext, !"врожай", false) != -1  || 
 			strfind(inputtext, !"тракторист", false) != -1  || 
-			strfind(inputtext, !"яблука", false) != -1  || 
 			strfind(inputtext, !"пшениця", false) != -1  ||
 			strfind(inputtext, !"робота тракториста", false) != -1  ||  
 			strfind(inputtext, !"робота фермера", false) != -1)
@@ -1424,98 +1424,143 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			}
 			else if (strfind(inputtext, !"мій початок", false) != -1  || 
 			strfind(inputtext, !"мій початок квест", false) != -1  || 
+			strfind(inputtext, !"квест 1", false) != -1  || 
+			strfind(inputtext, !"1 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 1", false) != -1  || 
+			strfind(inputtext, !"1 завдання", false) != -1  || 
 			strfind(inputtext, !"мій початок завдання", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Мій початок\" - це квест у Правди.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно відкрити інвентар клавішею Y.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
 			}
 			else if (strfind(inputtext, !"хто я", false) != -1  || 
 			strfind(inputtext, !"хто я квест", false) != -1  || 
 			strfind(inputtext, !"паспорт квест", false) != -1  || 
 			strfind(inputtext, !"ід картка квест", false) != -1  || 
 			strfind(inputtext, !"id-картка квест", false) != -1  || 
-			strfind(inputtext, !"id картка квест", false) != -1  || 
+			strfind(inputtext, !"id картка квест", false) != -1  ||
+			strfind(inputtext, !"квест 2", false) != -1  || 
+			strfind(inputtext, !"2 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 2", false) != -1  || 
+			strfind(inputtext, !"2 завдання", false) != -1  ||  
 			strfind(inputtext, !"хто я завдання", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Хто я?\" - це квест у Правди.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно отримати ID-картку в мерії.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Дана локація знаходиться в навігаторі: /gps - \"Державні організації\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
 			}
 			else if (strfind(inputtext, !"коробки так коробки", false) != -1  || 
 			strfind(inputtext, !"коробки квест", false) != -1  || 
 			strfind(inputtext, !"вантажник квест", false) != -1  || 
 			strfind(inputtext, !"грузчик квест", false) != -1  || 
 			strfind(inputtext, !"коробка квест", false) != -1  || 
+			strfind(inputtext, !"квест 3", false) != -1  || 
+			strfind(inputtext, !"3 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 3", false) != -1  || 
+			strfind(inputtext, !"3 завдання", false) != -1  || 
 			strfind(inputtext, !"коробки завдання", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Коробки так коробки\" - це квест у Правди.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно перенести 15 коробок на роботі вантажника.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Склад знаходиться в навігаторі: /gps - \"Початкові роботи\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
 			}
 			else if (strfind(inputtext, !"біль у шлунку", false) != -1  || 
 			strfind(inputtext, !"біль у шлунку квест", false) != -1  || 
 			strfind(inputtext, !"півень квест", false) != -1  || 
 			strfind(inputtext, !"поїсти у півня квест", false) != -1  || 
-			strfind(inputtext, !"біль у шлунку квест", false) != -1  || 
+			strfind(inputtext, !"біль у шлунку квест", false) != -1  ||
+			strfind(inputtext, !"квест 4", false) != -1  || 
+			strfind(inputtext, !"4 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 4", false) != -1  || 
+			strfind(inputtext, !"4 завдання", false) != -1  ||  
 			strfind(inputtext, !"біль у шлунку завдання", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Біль у шлунку\" - це квест у Правди.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно поїсти їжу у Півня.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Півня можна знайти на початковому спавні.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
 			}
 			else if (strfind(inputtext, !"профілактика", false) != -1  || 
 			strfind(inputtext, !"профілактика квест", false) != -1  || 
 			strfind(inputtext, !"коронавірус квест", false) != -1  || 
 			strfind(inputtext, !"медична маска квест", false) != -1  || 
+			strfind(inputtext, !"квест 5", false) != -1  || 
+			strfind(inputtext, !"5 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 5", false) != -1  || 
+			strfind(inputtext, !"5 завдання", false) != -1  || 
 			strfind(inputtext, !"профілактика завдання", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Профілактика коронавірусу\" - це квест у Правди.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно придбати медичну маску в магазині.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Магазин знаходиться в навігаторі: /gps - \"Магазини 24/7\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Її можна придбати в магазині: /gps - \"Магазини 24/7\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
 			}
 			else if (strfind(inputtext, !"спочатку було дерево", false) != -1  || 
 			strfind(inputtext, !"спочатку було дерево квест", false) != -1  || 
 			strfind(inputtext, !"лісоруб квест", false) != -1  || 
 			strfind(inputtext, !"лесоруб квест", false) != -1  || 
 			strfind(inputtext, !"лісопилка квест", false) != -1  || 
+			strfind(inputtext, !"квест 6", false) != -1  || 
+			strfind(inputtext, !"6 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 6", false) != -1  || 
+			strfind(inputtext, !"6 завдання", false) != -1  || 
 			strfind(inputtext, !"лісопилка завдання", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Спочатку було дерево\" - це квест у Правди.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно зрубати 15 дерев на роботі лісоруба.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Лісопилка знаходиться в навігаторі: /gps - \"Початкові роботи\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
 			}
 			else if (strfind(inputtext, !"по братськи", false) != -1  || 
 			strfind(inputtext, !"по-братськи", false) != -1  || 
 			strfind(inputtext, !"потиснути руку квест", false) != -1  || 
 			strfind(inputtext, !"/hi квест", false) != -1  || 
 			strfind(inputtext, !"hi квест", false) != -1  || 
+			strfind(inputtext, !"квест 7", false) != -1  || 
+			strfind(inputtext, !"7 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 7", false) != -1  || 
+			strfind(inputtext, !"7 завдання", false) != -1  || 
 			strfind(inputtext, !"по-братськи квест", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"По-братськи\" - це квест у Правди.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно потиснути руку іншому гравцю.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Це можна зробити командою: /hi [ID]");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
 			}
 			else if (strfind(inputtext, !"відкрита рана", false) != -1  || 
 			strfind(inputtext, !"квест відкрита рана", false) != -1  || 
 			strfind(inputtext, !"квест бинт", false) != -1  || 
 			strfind(inputtext, !"квест використати бинт", false) != -1  || 
 			strfind(inputtext, !"бинт квест", false) != -1  || 
+			strfind(inputtext, !"квест 8", false) != -1  || 
+			strfind(inputtext, !"8 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 8", false) != -1  || 
+			strfind(inputtext, !"8 завдання", false) != -1  || 
 			strfind(inputtext, !"бинт завдання", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Відкрита рана\" - це квест у Правди.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно придбати в магазині та використати бинт.");
-				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Магазин знаходиться в навігаторі: /gps - \"Магазини 24/7\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його можна придбати в магазині: /gps - \"Магазини 24/7\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
 			}
 			else if (strfind(inputtext, !"а потім було вугілля", false) != -1  || 
 			strfind(inputtext, !"було вугілля квест", false) != -1  || 
 			strfind(inputtext, !"вугілля квест", false) != -1  || 
 			strfind(inputtext, !"шахта квест", false) != -1  || 
 			strfind(inputtext, !"шахтар квест", false) != -1  || 
+			strfind(inputtext, !"квест 9", false) != -1  || 
+			strfind(inputtext, !"9 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 9", false) != -1  || 
+			strfind(inputtext, !"9 завдання", false) != -1  || 
 			strfind(inputtext, !"шахта завдання", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"А потім було вугілля\" - це квест у Правди.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно викопати 10 вугілля на роботі шахтаря.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Шахта знаходиться в навігаторі: /gps - \"Початкові роботи\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
 			}
 			else if (strfind(inputtext, !"кредитор", false) != -1  || 
 			strfind(inputtext, !"кредитор квест", false) != -1  || 
@@ -1523,11 +1568,195 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			strfind(inputtext, !"квест банк", false) != -1  || 
 			strfind(inputtext, !"банк квест", false) != -1  || 
 			strfind(inputtext, !"банківська карта квест", false) != -1  || 
+			strfind(inputtext, !"квест 10", false) != -1  || 
+			strfind(inputtext, !"10 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 10", false) != -1  || 
+			strfind(inputtext, !"10 завдання", false) != -1  || 
 			strfind(inputtext, !"банківська картка квест", false) != -1)
 			{ 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Кредитор\" - це квест у Правди.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно отримати банківську картку.");
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Банк знаходиться в навігаторі: /gps - \"Визначні місця\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
+			}
+			else if (strfind(inputtext, !"є подзвонити", false) != -1  || 
+			strfind(inputtext, !"є подзвонити?", false) != -1  || 
+			strfind(inputtext, !"є позвонити", false) != -1  || 
+			strfind(inputtext, !"телефон завдання", false) != -1  || 
+			strfind(inputtext, !"квест телефон", false) != -1  || 
+			strfind(inputtext, !"телефон квест", false) != -1  || 
+			strfind(inputtext, !"сімкарта квест", false) != -1  || 
+			strfind(inputtext, !"сімкартка квест", false) != -1  || 
+			strfind(inputtext, !"сім-карта квест", false) != -1  || 
+			strfind(inputtext, !"сім-картка квест", false) != -1  || 
+			strfind(inputtext, !"квест 11", false) != -1  || 
+			strfind(inputtext, !"11 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 11", false) != -1  || 
+			strfind(inputtext, !"11 завдання", false) != -1  || 
+			strfind(inputtext, !"купити сімку квест", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Є подзвонити?\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно придбати телефон та сім-карту.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Їх можна придбати в магазині: /gps - \"Магазини 24/7\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
+			}
+			else if (strfind(inputtext, !"який жнець", false) != -1  || 
+			strfind(inputtext, !"снопець", false) != -1  || 
+			strfind(inputtext, !"жнець", false) != -1  || 
+			strfind(inputtext, !"квест ферма", false) != -1  || 
+			strfind(inputtext, !"ферма квест", false) != -1  || 
+			strfind(inputtext, !"фермер квест", false) != -1  || 
+			strfind(inputtext, !"квест фермер", false) != -1  || 
+			strfind(inputtext, !"ферма завдання", false) != -1  || 
+			strfind(inputtext, !"фермер завдання", false) != -1  || 
+			strfind(inputtext, !"врожай квест", false) != -1  || 
+			strfind(inputtext, !"врожай зібрати", false) != -1  || 
+			strfind(inputtext, !"квест 12", false) != -1  || 
+			strfind(inputtext, !"12 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 12", false) != -1  || 
+			strfind(inputtext, !"12 завдання", false) != -1  || 
+			strfind(inputtext, !"завдання врожай", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Який жнець, такий снопець?\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно зібрати 15 врожаю на роботі фермера.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Ферма знаходиться в навігаторі: /gps - \"Початкові роботи\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
+			}
+			else if (strfind(inputtext, !"вези мене", false) != -1  || 
+			strfind(inputtext, !"квест визвати таксі", false) != -1  || 
+			strfind(inputtext, !"квест виклик таксі", false) != -1  || 
+			strfind(inputtext, !"квест викликати таксі", false) != -1  || 
+			strfind(inputtext, !"завдання викликати таксі", false) != -1  || 
+			strfind(inputtext, !"завдання визвати таксі", false) != -1  || 
+			strfind(inputtext, !"квест 13", false) != -1  || 
+			strfind(inputtext, !"13 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 13", false) != -1  || 
+			strfind(inputtext, !"13 завдання", false) != -1  || 
+			strfind(inputtext, !"завдання таксі телефон", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Вези мене\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно викликати таксі.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Натисніть H, щоб відкрити телефон, та оберіть застосунок \"Таксі\".");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
+			}
+			else if (strfind(inputtext, !"діло майстра", false) != -1  || 
+			strfind(inputtext, !"діло майстра величає", false) != -1  || 
+			strfind(inputtext, !"квест інженер", false) != -1  || 
+			strfind(inputtext, !"квест сервіс", false) != -1  || 
+			strfind(inputtext, !"квест сервісний центр", false) != -1  || 
+			strfind(inputtext, !"сервісний центр квест", false) != -1  || 
+			strfind(inputtext, !"сервісний центр завдання", false) != -1  || 
+			strfind(inputtext, !"квест товар", false) != -1  || 
+			strfind(inputtext, !"квест полагодити прилади", false) != -1  || 
+			strfind(inputtext, !"інженер квест", false) != -1  || 
+			strfind(inputtext, !"квест 14", false) != -1  || 
+			strfind(inputtext, !"14 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 14", false) != -1  || 
+			strfind(inputtext, !"14 завдання", false) != -1  || 
+			strfind(inputtext, !"завдання інженер", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Діло майстра величає\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно полагодити 20 товарів на роботі інженера.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Сервісний центр знаходиться в навігаторі: /gps - \"Початкові роботи\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
+			}
+			else if (strfind(inputtext, !"одним пішоходом", false) != -1  || 
+			strfind(inputtext, !"одним пішоходом менше", false) != -1  || 
+			strfind(inputtext, !"завдання скласти іспит водія", false) != -1  || 
+			strfind(inputtext, !"квест скласти іспит на права", false) != -1  || 
+			strfind(inputtext, !"квест скласти іспит на водійське посвідчення", false) != -1  || 
+			strfind(inputtext, !"квест водійське посвідчнення", false) != -1  || 
+			strfind(inputtext, !"квест права водія", false) != -1  || 
+			strfind(inputtext, !"квест водійські права", false) != -1  || 
+			strfind(inputtext, !"квест 15", false) != -1  || 
+			strfind(inputtext, !"15 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 15", false) != -1  || 
+			strfind(inputtext, !"15 завдання", false) != -1  || 
+			strfind(inputtext, !"квест посвідчення водія", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Одним пішоходом менше\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно скласти іспит на посвідчення водія.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Автошкола знаходиться в навігаторі: /gps - \"Визначні місця\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
+			}
+			else if (strfind(inputtext, !"тест-драйв квест", false) != -1  || 
+			strfind(inputtext, !"тестдрайв квест", false) != -1  || 
+			strfind(inputtext, !"тест-драйв завдання", false) != -1  ||
+			strfind(inputtext, !"квест 16", false) != -1  || 
+			strfind(inputtext, !"16 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 16", false) != -1  || 
+			strfind(inputtext, !"16 завдання", false) != -1  ||  
+			strfind(inputtext, !"тест драйв завдання", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Тест-драйв\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно пройти тест-драйв в автосалоні.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Автосалон знаходиться в навігаторі: /gps - \"Державні підприємства\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
+			}
+			else if (strfind(inputtext, !"октанове число", false) != -1  || 
+			strfind(inputtext, !"квест заправитись", false) != -1  || 
+			strfind(inputtext, !"квест заправити", false) != -1  || 
+			strfind(inputtext, !"квест 17", false) != -1  || 
+			strfind(inputtext, !"17 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 17", false) != -1  || 
+			strfind(inputtext, !"17 завдання", false) != -1  || 
+			strfind(inputtext, !"квест азс", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Октанове число\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно заправити транспортний засіб.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}АЗС знаходиться в навігаторі: /gps - \"Автозаправні станції\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
+			}
+			else if (strfind(inputtext, !"комплект водія", false) != -1  || 
+			strfind(inputtext, !"квест ремка", false) != -1  || 
+			strfind(inputtext, !"квест ремкомплект", false) != -1  || 
+			strfind(inputtext, !"квест 18", false) != -1  || 
+			strfind(inputtext, !"18 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 18", false) != -1  || 
+			strfind(inputtext, !"18 завдання", false) != -1  || 
+			strfind(inputtext, !"квест домкрат", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Комплект водія\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно використати ремкомплект або домкрат.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Їх можна використати через інвентар: домкрат - в т/з, ремкомплект - поруч з т/з.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Їх можна придбати можна на АЗС: /gps - \"Автозаправні станції\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
+			}
+			else if (strfind(inputtext, !"приведи себе", false) != -1  || 
+			strfind(inputtext, !"до ладу", false) != -1  || 
+			strfind(inputtext, !"приведи себе до ладу!", false) != -1  || 
+			strfind(inputtext, !"квест купити одяг", false) != -1  || 
+			strfind(inputtext, !"квест одяг", false) != -1  || 
+			strfind(inputtext, !"квест 19", false) != -1  || 
+			strfind(inputtext, !"19 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 19", false) != -1  || 
+			strfind(inputtext, !"19 завдання", false) != -1  || 
+			strfind(inputtext, !"квест скін", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Приведи себе до ладу!\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно придбати новий одяг.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Переодягтись можна через інвентар, обравши одяг та натиснувши на руки.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Його можна придбати можна в магазині одягу: /gps - \"Магазини одягу\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
+			}
+			else if (strfind(inputtext, !"майстер на всі руки", false) != -1  || 
+			strfind(inputtext, !"майстер", false) != -1  || 
+			strfind(inputtext, !"масстер", false) != -1  || 
+			strfind(inputtext, !"квест перші роботи", false) != -1  || 
+			strfind(inputtext, !"квест мастер", false) != -1  || 
+			strfind(inputtext, !"квест скіл перших робіт", false) != -1  || 
+			strfind(inputtext, !"квест скіли перших робіт", false) != -1  || 
+			strfind(inputtext, !"квест майстер", false) != -1  || 
+			strfind(inputtext, !"квест 20", false) != -1  || 
+			strfind(inputtext, !"20 квест", false) != -1  || 
+			strfind(inputtext, !"завдання 20", false) != -1  || 
+			strfind(inputtext, !"20 завдання", false) != -1  || 
+			strfind(inputtext, !"квест всі перші", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}\"Майстер на всі руки\" - це квест у Правди.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Щоб виконати дане завдання, потрібно досягти макс. рівня навичок на роботах 1-го рівня.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Усі локації знаходяться в навігаторі: /gps - \"Початкові роботи\"");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для моніторингу статусу завдання, використовуйте команду: /quest");
 			}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////// GPS
