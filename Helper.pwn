@@ -211,6 +211,28 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Налаштування гри доступні в головному меню (ESC)."); 
 				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Альтернативно, можна викликати меню через мобільний застосунок \"Налаштування\"..");
 			}
+			else if (strfind(inputtext, !"реферал", false) != -1  || 
+			strfind(inputtext, !"рефералка", false) != -1  || 
+			strfind(inputtext, !"реферальна", false) != -1  || 
+			strfind(inputtext, !"referal", false) != -1  || 
+			strfind(inputtext, !"/referals", false) != -1  || 
+			strfind(inputtext, !"referals", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Реферал - це гравець, котрий ввів нікнейм того, хто його запросив до гри.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}За приведеного гравця видається грошова винагорода."); 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Для того, щоб переглянути рефералів, введіть: /referals");
+			}
+			else if (strfind(inputtext, !"промо", false) != -1  || 
+			strfind(inputtext, !"промік", false) != -1  || 
+			strfind(inputtext, !"промокод", false) != -1  || 
+			strfind(inputtext, !"промо код", false) != -1  || 
+			strfind(inputtext, !"промакод", false) != -1  || 
+			strfind(inputtext, !"промка", false) != -1)
+			{ 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Промокод ghost дає нагороду за пройдене опитування.");
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Актуальні промокоди можна переглянути командою: /update"); 
+				SCM(playerid, COLOR_WHITE, !"{00b0b0}[GhostGPT] {FFFFFF}Промокоди медіа доступні у наших партнерів. Введіть нікнейм медіа і я допоможу знайти його!");
+			}
 			else if (strfind(inputtext, !"автошкола", false) != -1  ||
 			strfind(inputtext, !"права водія", false) != -1  || 
 			strfind(inputtext, !"водійські права", false) != -1  || 
